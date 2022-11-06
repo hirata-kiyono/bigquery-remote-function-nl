@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+  app:
+    build: .
+    container_name: nl_crun_test
+    environment:
+      - PORT=8080
+      - GOOGLE_APPLICATION_CREDENTIALS=client_secret.json
+    ports:
+      - "8080:8080"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/app
+    command: bash

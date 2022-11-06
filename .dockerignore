@@ -1,0 +1,10 @@
+Dockerfile
+README.md
+docker-compose.yml
+test.py
+client_secret.json
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_cache
